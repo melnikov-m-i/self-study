@@ -42,7 +42,7 @@
                 <div class="wrap">
                     <div class="header-sub">
                         <nav class="top clearfix">
-                            <ul class="clearfix">
+                            <ul class="js-main-menu clearfix">
                                 <li><a href="./index.html">home</a></li>
                                 <li><a href="./catalog.html">sale</a></li>
                                 <li><a href="./catalog.html">handbags</a></li>
@@ -286,25 +286,8 @@
         </footer>
 
         <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
-        <script>
-            $(function() {
-                var pull = $('#pull');
-                menu = $('nav ul');
-                menuHeight = menu.height();
 
-                $(pull).on('click', function(e) {
-                    e.preventDefault();
-                    menu.slideToggle();
-                });
-
-                $(window).resize(function(){
-                    var w = $(window).width();
-                    if(w > 320 && menu.is(':hidden')) {
-                        menu.removeAttr('style');
-                    }
-                });
-            });
-        </script>
+        <script type="text/javascript" src="./js/main-menu.js"></script>
 
         <script type="text/javascript" src="./js/slick/slick.min.js"></script>
 
