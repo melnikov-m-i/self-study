@@ -2,8 +2,7 @@
 
 $(function() {
     var pull = $('#pull'),
-    menu = $('.js-main-menu'),
-    menuHeight = menu.height();
+    menu = $('.js-main-menu');
 
     pull.on('click', function(e) {
         e.preventDefault();
@@ -17,7 +16,7 @@ $(function() {
         const isDesktop = w > ADAPTIVE_MOBILE_MAX;
 
         if (isDesktop && menu.is(':hidden')) {
-            menu.attr('style', 'display: block');
+            menu.css('display', 'block');
         }
     });
 });
